@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/rciup/mobilki/todoapp/app/src/main/res/layout/fragment_task.xml" value="0.1" />
+        <entry key="..\:/Users/rciup/mobilki/todoapp/app/src/main/res/drawable-anydpi/ic_house.xml" value="0.2703125" />
+        <entry key="..\:/Users/rciup/mobilki/todoapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/rciup/mobilki/todoapp/app/src/main/res/layout/fragment_task.xml" value="0.264" />
+        <entry key="..\:/Users/rciup/mobilki/todoapp/app/src/main/res/layout/fragment_task_list.xml" value="0.4" />
+        <entry key="..\:/Users/rciup/mobilki/todoapp/app/src/main/res/layout/list_item_task.xml" value="0.4" />
+        <entry key="..\:/Users/rciup/mobilki/todoapp/app/src/main/res/menu/fragment_task_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

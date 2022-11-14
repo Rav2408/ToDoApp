@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="40dp"
+    style="@style/task_list_style">
 
+
+    <CheckBox
+        android:id="@+id/task_item_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
 
     <TextView
         android:id="@+id/task_item_name"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/text_view_render_width"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView" />
+        android:layout_weight="5"
+        android:lines="1"
+        android:ellipsize="end" />
 
     <TextView
         android:id="@+id/task_item_date"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/text_view_render_width"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView" />
+        android:layout_weight="2" />
+
+    <ImageView
+        android:id="@+id/task_icon_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:padding="@dimen/task_item_padding"
+        app:srcCompat="@drawable/ic_house"
+        tools:srcCompat="@drawable/ic_house" />
+
 </LinearLayout>

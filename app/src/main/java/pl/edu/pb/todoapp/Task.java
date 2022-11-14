@@ -1,17 +1,25 @@
 package pl.edu.pb.todoapp;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.UUID;
 
 public class Task {
     private UUID id;
     private String name;
-    private Date date;
+    private LocalDate date;
     private boolean done;
+    private Category category;
+
 
     public Task(){
         id = UUID.randomUUID();
-        date = new Date();
+        date = LocalDate.now();
+        category = Category.STUDIES;
     }
 
     public UUID getId() {
@@ -30,11 +38,11 @@ public class Task {
         this.name = name;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -44,6 +52,14 @@ public class Task {
 
     public void setDone(boolean done) {
         this.done = done;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
 
